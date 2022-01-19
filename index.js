@@ -181,7 +181,7 @@ const app = {
 
         randomButton.onclick = function(){
             _this.isRandom = !_this.isRandom;
-            _this.setConfig('isRamdom', _this.isRandom);
+            _this.setConfig('isRandom', _this.isRandom);
             this.classList.toggle('active', _this.isRandom);
         }
 
