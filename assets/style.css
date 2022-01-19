@@ -10,7 +10,9 @@
   }
   
   body {
-    background-color: #f5f5f5;
+    background-image: url("./img/music-player-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   html {
@@ -36,9 +38,18 @@
     display: none;
   }
   
+  input[type="range" i] {
+    appearance: auto;
+    cursor: pointer;
+    color: rgb(157, 150, 142);
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+
   .dashboard {
     padding: 16px 16px 14px;
-    background-color: #fff;
+    background-image: linear-gradient(to top, #080707 0%, #f3540bee 100%);
     position: fixed;
     top: 0;
     width: 100%;
@@ -117,6 +128,7 @@
     opacity: 0.7;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
+    cursor: pointer;
   }
   
   .progress::-webkit-slider-thumb {
